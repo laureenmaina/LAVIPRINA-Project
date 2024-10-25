@@ -1,0 +1,164 @@
+{
+  "animals": [
+    {
+      "id": 1,
+      "gender": "Female",
+      "weight": "30kg",
+      "species": "Sheep",
+      "breed": "Dorper",
+      "tag_number": "SHEEP001",
+      "is_pregnant": true,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Dorper_ram_in_the_Kalahari_-_South_Africa_.jpg/220px-Dorper_ram_in_the_Kalahari_-_South_Africa_.jpg"
+    },
+    {
+      "id": 2,
+      "gender": "Male",
+      "weight": "20kg",
+      "species": "Goat",
+      "breed": "Saanen",
+      "tag_number": "GOAT001",
+      "is_pregnant": false,
+      "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Saanenziege.jpg"
+    },
+    {
+      "id": 3,
+      "gender": "Male",
+      "weight": "28kg",
+      "species": "Sheep",
+      "breed": "Dorper",
+      "tag_number": "SHEEP002",
+      "is_pregnant": false,
+      "avatar_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfF48q4iWvLTXyQSbghOir-_zzDgZChfqOlg&s"
+    },
+    {
+      "id": 4,
+      "gender": "Male",
+      "weight": "25kg",
+      "species": "Goat",
+      "breed": "Toggenburg",
+      "tag_number": "GOAT002",
+      "is_pregnant": false,
+      "avatar_url": "https://www.thehappychickencoop.com/wp-content/uploads/2023/03/toggenburg-goat-breed.jpg"
+    },
+    {
+      "id": 5,
+      "gender": "Female",
+      "weight": "32kg",
+      "species": "Sheep",
+      "breed": "Dorper",
+      "tag_number": "SHEEP003",
+      "is_pregnant": true,
+      "avatar_url": "https://thumbs.dreamstime.com/b/beautiful-female-dorper-sheep-farm-animals-farming-agriculture-beautiful-female-dorper-sheep-farm-animals-258574735.jpg"
+    },
+    {
+      "id": 6,
+      "gender": "Male",
+      "weight": "22kg",
+      "species": "Goat",
+      "breed": "Toggenburg ",
+      "tag_number": "GOAT003",
+      "is_pregnant": false,
+      "avatar_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScqCLHuKXvDYNuoB4vCCyG4lTo5iwqd6EAMA&s"
+    },
+    {
+      "id": 7,
+      "gender": "Male",
+      "weight": "29kg",
+      "species": "Sheep",
+      "breed": "Dorper",
+      "tag_number": "SHEEP004",
+      "is_pregnant": false,
+      "avatar_url": "https://www.shutterstock.com/image-photo/male-dorper-ram-very-awarded-600nw-2455099751.jpg"
+    },
+    {
+      "id": 8,
+      "gender": "Male",
+      "weight": "24kg",
+      "species": "Goat",
+      "breed": "Saanen",
+      "tag_number": "GOAT004",
+      "is_pregnant": false,
+      "avatar_url": "https://st2.depositphotos.com/4958403/7321/i/950/depositphotos_73212619-stock-photo-male-goat-colombia.jpg"
+    },
+    {
+      "id": 9,
+      "gender": "Male",
+      "weight": "31kg",
+      "species": "Sheep",
+      "breed": "Dorper",
+      "tag_number": "SHEEP005",
+      "is_pregnant": false,
+      "avatar_url": "https://t4.ftcdn.net/jpg/08/20/40/43/360_F_820404338_90FXBJjHU2n2Ei7Yek51ZUUb6xUTpujU.jpg"
+    },
+    {
+      "id": 10,
+      "gender": "Female",
+      "weight": "26kg",
+      "species": "Goat",
+      "breed": "Saanen",
+      "tag_number": "GOAT005",
+      "is_pregnant": false,
+      "avatar_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM-yDe-z51Td4rFCZMfdGPKANha3QHwnhZoFz-3X7jp3t670Ec8_BDBcc-eCaSwEWrNHY&usqp=CAU"
+    },
+    {
+      "id": 11,
+      "gender": "Female",
+      "weight": "33kg",
+      "species": "Sheep",
+      "breed": "Dorper",
+      "tag_number": "SHEEP006",
+      "is_pregnant": true,
+      "avatar_url": "https://primelivestocks.co.za/wp-content/uploads/2023/11/IMG_8738_JPG.webp"
+    },
+    {
+      "id": 12,
+      "gender": "Female",
+      "weight": "21kg",
+      "species": "Goat",
+      "breed": "Toggenburg",
+      "tag_number": "GOAT006",
+      "is_pregnant": false,
+      "avatar_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKIecouwjP_gr2aDyHC263yQUDus8xjnwpSw&s"
+    },
+    {
+      "id": 13,
+      "gender": "Female",
+      "weight": "30kg",
+      "species": "Sheep",
+      "breed": "Dorper",
+      "tag_number": "SHEEP007",
+      "is_pregnant": true,
+      "avatar_url": "https://thumbs.dreamstime.com/z/beautiful-female-dorper-sheep-farm-animals-farming-agriculture-beautiful-female-dorper-sheep-farm-animals-257710519.jpg"
+    },
+    {
+      "id": 14,
+      "gender": "Female",
+      "weight": "23kg",
+      "species": "Goat",
+      "breed": "Saanen",
+      "tag_number": "GOAT007",
+      "is_pregnant": false,
+      "avatar_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgwMSX-4DakONlPuLs4Lcds_epDXDCLH55dgFX6HAkDFr2-7eZseVzNcjZWjKOULixbuI&usqp=CAU"
+    },
+    {
+      "id": 15,
+      "gender": "Female",
+      "weight": "34kg",
+      "species": "Sheep",
+      "breed": "Dorper",
+      "tag_number": "SHEEP008",
+      "is_pregnant": true,
+      "avatar_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbjrd28KIYgze0ma3pKHMD4K3aHMyKRSWtfg&s"
+    },
+    {
+      "id": 16,
+      "gender": "Male",
+      "weight": "27kg",
+      "species": "Goat",
+      "breed": "Toggenburg ",
+      "tag_number": "GOAT008",
+      "is_pregnant": false,
+      "avatar_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2VD0G2GgK8JbAhFKR2zuSlsQw0jWJ_DdCZg&s"
+    }
+  ]
+}
