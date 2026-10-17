@@ -1,0 +1,174 @@
+[
+  {
+    "id": "a1",
+    "name": "Daisy",
+    "tag": "KR-001",
+    "species": "cow",
+    "breed": "Friesian",
+    "sex": "Female",
+    "birth": "2020-03-14",
+    "weight": 612,
+    "status": "Milking",
+    "pen": "Barn A",
+    "sire": "KR-B12",
+    "dam": "KR-044",
+    "vacc": "2026-06-10",
+    "vaccNext": "2026-12-10",
+    "milk": 24.5,
+    "due": "",
+    "notes": "Top producer. Calm temperament.",
+    "photo": "",
+    "weights": [
+      {
+        "d": "2026-04-01",
+        "w": 598
+      },
+      {
+        "d": "2026-07-01",
+        "w": 605
+      },
+      {
+        "d": "2026-09-30",
+        "w": 612
+      }
+    ]
+  },
+  {
+    "id": "a2",
+    "name": "Amani",
+    "tag": "KR-014",
+    "species": "cow",
+    "breed": "Jersey",
+    "sex": "Female",
+    "birth": "2021-08-02",
+    "weight": 405,
+    "status": "Pregnant",
+    "pen": "Barn B",
+    "sire": "KR-B09",
+    "dam": "KR-022",
+    "vacc": "2026-05-20",
+    "vaccNext": "2026-10-15",
+    "milk": 14,
+    "due": "2027-01-18",
+    "notes": "Due in January. Dry off in November.",
+    "photo": "",
+    "weights": [
+      {
+        "d": "2026-06-01",
+        "w": 390
+      },
+      {
+        "d": "2026-09-30",
+        "w": 405
+      }
+    ]
+  },
+  {
+    "id": "a3",
+    "name": "Zuri",
+    "tag": "KR-031",
+    "species": "cow",
+    "breed": "Ayrshire",
+    "sex": "Female",
+    "birth": "2022-11-21",
+    "weight": 488,
+    "status": "Milking",
+    "pen": "Barn A",
+    "sire": "KR-B12",
+    "dam": "KR-017",
+    "vacc": "2026-06-10",
+    "vaccNext": "2026-12-10",
+    "milk": 19.2,
+    "due": "",
+    "notes": "",
+    "photo": "",
+    "weights": [
+      {
+        "d": "2026-09-30",
+        "w": 488
+      }
+    ]
+  },
+  {
+    "id": "s1",
+    "name": "Pendo",
+    "tag": "SH-102",
+    "species": "sheep",
+    "breed": "Dorper",
+    "sex": "Female",
+    "birth": "2023-02-09",
+    "weight": 58,
+    "status": "Lactating",
+    "pen": "Paddock 2",
+    "sire": "SH-R04",
+    "dam": "SH-055",
+    "vacc": "2026-08-01",
+    "vaccNext": "2027-02-01",
+    "milk": "",
+    "due": "",
+    "notes": "Twin lambs born in August.",
+    "photo": "",
+    "weights": [
+      {
+        "d": "2026-05-01",
+        "w": 52
+      },
+      {
+        "d": "2026-09-30",
+        "w": 58
+      }
+    ]
+  },
+  {
+    "id": "s2",
+    "name": "Jabari",
+    "tag": "SH-R04",
+    "species": "sheep",
+    "breed": "Merino",
+    "sex": "Male",
+    "birth": "2021-05-30",
+    "weight": 84,
+    "status": "Breeding",
+    "pen": "Paddock 1",
+    "sire": "",
+    "dam": "",
+    "vacc": "2026-08-01",
+    "vaccNext": "2027-02-01",
+    "milk": "",
+    "due": "",
+    "notes": "Main ram. Shear in March.",
+    "photo": "",
+    "weights": [
+      {
+        "d": "2026-09-30",
+        "w": 84
+      }
+    ]
+  },
+  {
+    "id": "s3",
+    "name": "Tumaini",
+    "tag": "SH-118",
+    "species": "sheep",
+    "breed": "Red Maasai",
+    "sex": "Female",
+    "birth": "2025-06-12",
+    "weight": 31,
+    "status": "Growing",
+    "pen": "Paddock 2",
+    "sire": "SH-R04",
+    "dam": "SH-055",
+    "vacc": "2026-08-01",
+    "vaccNext": "2026-10-01",
+    "milk": "",
+    "due": "",
+    "notes": "Check for worms.",
+    "photo": "",
+    "weights": [
+      {
+        "d": "2026-09-30",
+        "w": 31
+      }
+    ]
+  }
+]
