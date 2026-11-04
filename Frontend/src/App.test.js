@@ -1,8 +1,12 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+beforeEach(() => {
+  window.localStorage.removeItem('kr-token');
+});
+
+test('renders the farm login page', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  expect(screen.getByRole('heading', { name: /welcome back/i })).toBeInTheDocument();
+  expect(screen.getByRole('button', { name: /^log in$/i })).toBeInTheDocument();
 });

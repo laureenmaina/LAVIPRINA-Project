@@ -91,7 +91,7 @@ def parse_float(value, field):
     return number
 
 
-def clean_animal_data(data, creating):
+def clean_animal_data(data, creating, existing_next_vaccination_date=None):
     """Validate the request body and return only safe, correctly typed values."""
     if creating:
         missing = [f for f in REQUIRED if data.get(f) in (None, "")]
@@ -106,6 +106,13 @@ def clean_animal_data(data, creating):
     for f in DATE_FIELDS:
         if f in data:
             out[f] = parse_date(data[f], f)
+    next_vaccination_date = out.get("nextvaccinationdate")
+    if (
+        next_vaccination_date is not None
+        and next_vaccination_date < date.today()
+        and next_vaccination_date != existing_next_vaccination_date
+    ):
+        raise ValueError("nextvaccinationdate cannot be in the past")
     for f in FLOAT_FIELDS:
         if f in data:
             out[f] = parse_float(data[f], f)
@@ -261,7 +268,11 @@ def update_animal(animal_id):
     if not isinstance(data, dict):
         return error("Send the changes as JSON.")
     try:
-        values = clean_animal_data(data, creating=False)
+        values = clean_animal_data(
+            data,
+            creating=False,
+            existing_next_vaccination_date=animal.nextvaccinationdate,
+        )
     except ValueError as e:
         return error(str(e))
 

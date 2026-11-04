@@ -2,6 +2,17 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Farm pages
+
+The farm interface is implemented in React. Its pages are in `src/pages`:
+`Dashboard.js`, `Aboutus.js`, `contactus.js`, `inventory.js`, `milkrecords.js`,
+`feeds.js`, `breeding.js` and `sales.js`. Navigation and shared authenticated
+farm data are provided by `src/components/FarmNav.js` and
+`src/context/FarmContext.js`; `public/index.html` is only the React entry shell.
+
+The frontend connects to the Flask API at `http://localhost:5000` by default.
+Set `REACT_APP_API_URL` to the backend origin when deploying elsewhere.
+
 ## Available Scripts
 
 In the project directory, you can run:
