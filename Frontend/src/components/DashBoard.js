@@ -8,7 +8,7 @@ function DashBoard() {
   const [animals, setAnimals] = useState([]);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:5000/view_animals")  
+    fetch("https://laviprina-project.vercel.app/view_animals")  
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch data");

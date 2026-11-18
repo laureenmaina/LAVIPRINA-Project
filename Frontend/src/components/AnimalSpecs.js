@@ -10,7 +10,7 @@ function AnimalSpecs() {
   const [editedAnimal, setEditedAnimal] = useState({});; // State to hold the edited animal data
 
   useEffect(() => {
-    fetch('http://127.0.0.1:5000/view_animals')
+    fetch('https://laviprina-project.vercel.app/view_animals')
     .then(response => {
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
@@ -54,7 +54,7 @@ const handleFormSubmit = async (e) => {
     formData.purchase_date = editedAnimal.purchase_date ? editedAnimal.purchase_date.toISOString().split('T')[0] : null;
     formData.expected_delivery_date = editedAnimal.expected_delivery_date ? editedAnimal.expected_delivery_date.toISOString().split('T')[0] : null;
 
-    const response = await fetch(`http://127.0.0.1:5000/update_animal/${animalId}`, {
+    const response = await fetch(`https://laviprina-project.vercel.app/update_animal/${animalId}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',

@@ -1,6 +1,6 @@
 import React, { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
 
-const API_URL = `${(process.env.REACT_APP_API_URL || "http://localhost:5000").replace(/\/+$/, "")}/api`;
+const API_URL = `${(process.env.REACT_APP_API_URL || "https://laviprina-project.vercel.app").replace(/\/+$/, "")}/api`;
 const FarmContext = createContext(null);
 
 export function FarmProvider({ children }) {
