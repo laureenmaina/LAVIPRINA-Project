@@ -20,16 +20,30 @@ load_dotenv()
 
 # ---------- configuration ----------
 database_uri = os.environ.get("DATABASE_URI", "")
-if database_uri.startswith("postgres://"):  # SQLAlchemy needs "postgresql://"
-    database_uri = database_uri.replace("postgres://", "postgresql://", 1)
+
+if database_uri.startswith("postgres://"):
+    database_uri = database_uri.replace(
+        "postgres://",
+        "postgresql://",
+        1
+    )
+
+if database_uri.startswith("postgresql://"):
+    database_uri = database_uri.replace(
+        "postgresql://",
+        "postgresql+psycopg2://",
+        1
+    )
+
 if not database_uri:
-    raise RuntimeError("DATABASE_URI is not set. Copy .env.example to .env and fill it in.")
+    raise RuntimeError("DATABASE_URI is not set.")
 
 secret_key = os.environ.get("SUPABASE_SECRET_KEY")
 if not secret_key:
     raise RuntimeError("SECRET_KEY is not set. Add a long random string to your .env file.")
 
 app = Flask(__name__)
+
 app.config.update(
     SECRET_KEY=secret_key,
     JWT_SECRET_KEY=os.environ.get("JWT_SECRET_KEY", secret_key),
