@@ -54,15 +54,13 @@ db.init_app(app)
 Migrate(app, db)
 JWTManager(app)
 
-
-# ---------- helpers ----------
 def error(message, status=400):
     return jsonify(error=message), status
 
 
+# ---------- helpers ----------
 def owner_id():
     return int(get_jwt_identity())
-
 
 def get_owned_animal(animal_id):
     return db.session.scalar(
