@@ -1,6 +1,6 @@
 import os
 from datetime import date, timedelta
-
+from sqlalchemy.pool import NullPool
 from dotenv import load_dotenv
 from flask import Flask, jsonify, request
 from flask_cors import CORS
@@ -36,7 +36,13 @@ app.config.update(
     JWT_ACCESS_TOKEN_EXPIRES=timedelta(hours=12),
     SQLALCHEMY_DATABASE_URI=database_uri,
     SQLALCHEMY_TRACK_MODIFICATIONS=False,
-    MAX_CONTENT_LENGTH=3 * 1024 * 1024,  # photos are sent as small data URLs
+    SQLALCHEMY_ENGINE_OPTIONS={
+        "poolclass": NullPool,
+        "connect_args": {
+            "sslmode": "require"
+        }
+    },
+    MAX_CONTENT_LENGTH=3 * 1024 * 1024,
 )
 app.json.compact = False
 
